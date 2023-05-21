@@ -255,14 +255,14 @@ img {
 }
 
 @media (max-width: 800px) {
-  .experiencia {
+  .container {
     grid-template-columns: 1fr;
     gap: 4rem;
   }
   .subtitulo {
     font-size: 4.8rem;
     text-transform: capitalize;
-    width: initial;
+    width: initial !important;
   }
   .experiencia .subtitulo {
     color: var(--color-1);
@@ -292,8 +292,25 @@ img {
   color: var(--color-white);
 }
 
+.formacao-container {
+  padding: 12rem 2rem;
+  position: relative;
+}
+
+.formacao-container::after {
+  content: '';
+  display: block;
+  width: 13rem;
+  height: 10rem;
+  background: url('../img/detalhe.svg') no-repeat center center;
+  position: absolute;
+  bottom: -5rem;
+  left: 2rem;
+}
+
 .formacao .subtitulo {
   color: var(--color-black);
+  width: 5ch;
 }
 
 .formacao .formacao-texto {
@@ -380,5 +397,36 @@ img {
 
 .idiomas h3::before {
   background: url("../img/idiomas.svg") no-repeat center center;
+}
+
+.formacao-extra li {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.formacao-extra span {
+  color: var(--color-6);
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    padding: 6rem 2rem;
+  }
+  .formacao .subtitulo {
+    color: var(--color-white);
+  }
+  .formacao-texto {
+    font-size: 1.8rem;
+  }
+  .formacao-extra h3::before{
+    position: static;
+    margin-bottom: 1rem;
+  }
 }
 

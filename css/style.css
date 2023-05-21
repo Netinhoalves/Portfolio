@@ -7,6 +7,7 @@
   --color-4: #E0E0E0;
   --color-5: #a3a3a3;
   --color-6: #8f8f8f;
+  --color-7: #cccccc;
   --color-gradient-1: #264de4;
   --color-gradient-2: #2965f1;
   --color-white: #ffffff;
@@ -430,3 +431,36 @@ img {
   }
 }
 
+.footer {
+  background: var(--color-black);
+}
+
+.footer-container {
+  padding: 12rem 2rem 6rem 2rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 2.4rem;
+  line-height: 1.33;
+  color: var(--color-7);
+}
+
+.footer-contato li {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 1.1;
+  color: var(--color-white);
+  margin-bottom: 3rem;
+}
+
+.footer-contato li a {
+  color: var(--color-white);
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  font-size: 1.8rem;
+  color: var(--color-6);
+}

@@ -5,10 +5,11 @@
   --color-2: #f5f5f5;
   --color-3: #525252;
   --color-4: #E0E0E0;
+  --color-5: #a3a3a3;
+  --color-6: #8f8f8f;
   --color-gradient-1: #264de4;
   --color-gradient-2: #2965f1;
   --color-white: #ffffff;
-  --color-mercury: #ebebeb;
   --color-black: #000000;
 }
 
@@ -174,7 +175,7 @@ img {
   color: var(--color-4);
 }
 
-.experiencia .experiencia-texto {
+.texto {
   font-size: 2.4rem;
   line-height: 1.33;
   max-width: 45ch;
@@ -285,3 +286,99 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+.formacao {
+  background: var(--color-1);
+  color: var(--color-white);
+}
+
+.formacao .subtitulo {
+  color: var(--color-black);
+}
+
+.formacao .formacao-texto {
+  color: var(--color-5);
+}
+
+.formacao .formacao-texto strong {
+  color: var(--color-white);
+}
+
+.formacao .faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.formacao .faculdade-lista .faculdade {
+  flex: 1;
+  background: var(--color-black);
+  padding: 2rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-lista .faculdade .faculdade-tipo {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--color-5);
+  margin-bottom: 1rem;
+}
+
+.faculdade-lista .faculdade .faculdade-curso {
+  flex: 1;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.faculdade-lista .faculdade .faculdade-curso::before {
+  content: '';
+  display: block;
+  width: .5rem;
+  height: 2rem;
+  background: linear-gradient(var(--color-gradient-1), var(--color-gradient-2));
+  position: absolute;
+  left: -2.5rem;
+}
+
+.faculdade-lista .faculdade .faculdade-instituicao {
+  font-size: 1.8rem;
+  color: var(--color-5);
+  text-transform: uppercase;
+}
+
+.cursos {
+  margin-bottom: 6rem;
+}
+
+.formacao-extra h3 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--color-6);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  display: block;
+  content: '';
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: -3.6rem;
+  top: -.4rem;
+}
+
+.cursos h3::before {
+  background: url("../img/cursos.svg") no-repeat center center;
+}
+
+.idiomas h3::before {
+  background: url("../img/idiomas.svg") no-repeat center center;
+}
+

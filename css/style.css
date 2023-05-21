@@ -153,14 +153,14 @@ img {
     height: 1rem;
     left: 0rem;
   }
+  .introducao img {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
   .introducao {
     grid-template-columns: 1fr;
-  }
-  .introducao img {
-    display: none;
   }
 }
 
@@ -463,4 +463,14 @@ img {
   grid-column: 1 / -1;
   font-size: 1.8rem;
   color: var(--color-6);
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .footer-contato li {
+    font-size: 2.4rem;
+  }
 }

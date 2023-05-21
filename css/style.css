@@ -208,6 +208,14 @@ img {
   left: -0.5rem;
 }
 
+.experiencia .empresa a {
+  color: var(--color-1);
+}
+
+.experiencia .empresa a:hover {
+  color: var(--color-gradient-1);
+}
+
 .experiencia .empresa .empresa-ano {
   position: absolute;
   top: 2.2rem;
